@@ -1,0 +1,301 @@
+<ion-header no-border>
+    <ion-toolbar>
+      <ion-row>
+      <ion-icon class="back-icon2" name="arrow-back"></ion-icon>
+      <ion-title>Dairy</ion-title>
+    </ion-row>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+ <div class="img-div">
+   <img class="img1" src="assets/imgs/Rectangle.png">
+   <p class="para-img-div">-35% Off in your face to face dietitian
+    consultation schedule now </p>
+ </div>
+ <table class="stTable">
+  <thead>
+    <tr>
+      <th>
+        <p>Mon</p>
+        <div class="circle circleActive"
+          [class.filledCircle]="stepper === 'first' || stepper === 'done' ">
+          <p>1</p>
+        </div>
+      </th>
+      <th>
+        <div class="line">
+          <hr>
+        </div>
+      </th>
+      <th>
+          <p>Tue</p>
+        <div class="circle circleDeactive"
+          [class.filledCircle]="stepper === 'second' || stepper === 'done' ">
+          <p>2</p>
+        </div>
+      </th>
+      <th>
+        <div class="line">
+          <hr>
+        </div>
+      </th>
+      <th>
+          <p>Wed</p>
+        <div class="circle circleDeactive" 
+          [class.filledCircle]="stepper === 'third' || stepper === 'done' ">
+          <p>3</p>
+        </div>
+      </th>
+      <th>
+        <div class="line">
+          <hr>
+        </div>
+      </th>
+      <th>
+          <p>Thu</p>
+        <div class="circle circleDeactive" 
+          [class.filledCircle]="stepper === 'fourth' || stepper === 'done' ">
+          <p>4</p>
+        </div>
+      </th>
+      <th>
+        <div class="line">
+          <hr>
+        </div>
+      </th>
+      <th>
+          <p>Fri</p>
+        <div class="circle circleDeactive"
+          [class.filledCircle]="stepper === 'five' || stepper === 'done' ">
+          <p>5</p>
+        </div>
+      </th>
+      <th>
+          <div class="line">
+            <hr>
+          </div>
+        </th>
+        <th>
+            <p>Sat</p>
+          <div class="circle circleDeactive"
+            [class.filledCircle]="stepper === 'five' || stepper === 'done' ">
+            <p>6</p>
+          </div>
+        </th>
+        <th>
+            <div class="line">
+              <hr>
+            </div>
+          </th>
+          <th>
+              <p>Sun</p>
+            <div class="circle circleDeactive"
+              [class.filledCircle]="stepper === 'five' || stepper === 'done' ">
+              <p>7</p>
+            </div>
+          </th>
+    </tr>
+  </thead>
+</table>
+<br>
+   <h4 class="h4">Calorie Tracker</h4>
+  
+ <div class="outer-loader-div">
+  <ion-row>
+    <ion-col size="3">
+      <p>0 kcal</p>
+    </ion-col>
+    <ion-col size="6"></ion-col>
+    <ion-col size="3">
+      <p class="ppp">1000 Kcal</p>
+    </ion-col>
+  </ion-row>
+  <div class="inner-loader-div">
+     <div class="loader-div">
+
+     </div>
+  </div>
+ </div>
+ <br>
+ <h4 class="h4">Nutrient Tracker</h4>
+ <ion-grid>
+ <ion-row>
+   <ion-col size="4">
+ <div class="nutrient-tracker-div">
+    <h6>250gr</h6>
+    <p>carbs</p>
+ </div>
+  </ion-col>
+  <ion-col size="4">
+ <div class="nutrient-tracker-div">
+    <h6>69gr</h6>
+    <p>prot</p>
+  </div>
+  </ion-col>
+  <ion-col size="4">
+  <div class="nutrient-tracker-div">
+      <h6>30gr</h6>
+      <p>fat</p>
+    </div>
+    </ion-col>
+</ion-row>
+</ion-grid>
+
+
+  <h4 class="h4">Meal Plans</h4>
+  <div class="meal-plan-div" >
+    <ion-row>
+      <ion-col size=2>
+     <img class="Meal-img" src="assets/imgs/Ellipse.png" (click)="ClickTORecipeTracker()">
+    </ion-col>
+    <ion-col size=7>
+      <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">Breakfast</h6>
+      <p (click)="ClickTORecipeTracker()">Lorem Ipsum is simply dummy text</p>
+      <p (click)="ClickTORecipeTracker()">of the printing and typesetting.</p>
+    </ion-col>
+    <ion-col size=3>
+      <h6 class="Meal-plan-h6-2">450 KCAL</h6>
+      <ion-row>
+        <img class="meal-heart-img" src="assets/imgs/heart.png">
+        <img class="meal-search-img" src="assets/imgs/search.png" (click)="ClickTORecipe()">
+      </ion-row>
+    </ion-col>
+    </ion-row>
+  </div>
+  <br>
+  <div class="meal-plan-div">
+      <ion-row>
+        <ion-col size=2>
+       <img class="Meal-img" src="assets/imgs/Ellipse1.png" (click)="ClickTORecipeTracker()">
+      </ion-col>
+      <ion-col size=7>
+        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">Morning Snack</h6>
+        <p (click)="ClickTORecipeTracker()">Lorem Ipsum is simply dummy text</p>
+        <p (click)="ClickTORecipeTracker()">of the printing and typesetting.</p>
+      </ion-col>
+      <ion-col size=3>
+        <h6 class="Meal-plan-h6-2">350 KCAL</h6>
+        <ion-row>
+          <img class="meal-heart-img" src="assets/imgs/heart.png">
+          <img class="meal-search-img" src="assets/imgs/search.png" (click)="ClickTORecipe()">
+        </ion-row>
+      </ion-col>
+      </ion-row>
+    </div>
+    <br>
+  <div class="meal-plan-div">
+      <ion-row>
+        <ion-col size=2>
+       <img class="Meal-img" src="assets/imgs/Ellipse2.png" (click)="ClickTORecipeTracker()">
+      </ion-col>
+      <ion-col size=7>
+        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">Lunch</h6>
+        <p (click)="ClickTORecipeTracker()">Lorem Ipsum is simply dummy text</p>
+        <p (click)="ClickTORecipeTracker()">of the printing and typesetting.</p>
+      </ion-col>
+      <ion-col size=3>
+        <h6 class="Meal-plan-h6-2">220 KCAL</h6>
+        <ion-row>
+          <img class="meal-heart-img" src="assets/imgs/heart.png">
+          <img class="meal-search-img" src="assets/imgs/search.png" (click)="ClickTORecipe()">
+        </ion-row>
+      </ion-col>
+      </ion-row>
+    </div>
+    <br>
+  <div class="meal-plan-div">
+      <ion-row>
+        <ion-col size=2>
+       <img class="Meal-img" src="assets/imgs/Ellipse4.png" (click)="ClickTORecipeTracker()">
+      </ion-col>
+      <ion-col size=7>
+        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">Afternoon Snack</h6>
+        <p (click)="ClickTORecipeTracker()">Lorem Ipsum is simply dummy text</p>
+        <p (click)="ClickTORecipeTracker()">of the printing and typesetting.</p>
+      </ion-col>
+      <ion-col size=3>
+        <h6 class="Meal-plan-h6-2">420 KCAL</h6>
+        <ion-row>
+          <img class="meal-heart-img" src="assets/imgs/heart.png">
+          <img class="meal-search-img" src="assets/imgs/search.png" (click)="ClickTORecipe()">
+        </ion-row>
+      </ion-col>
+      </ion-row>
+    </div>
+    <br>
+  <div class="meal-plan-div">
+      <ion-row>
+        <ion-col size=2>
+       <img class="Meal-img" src="assets/imgs/Ellipse5.png" (click)="ClickTORecipeTracker()">
+      </ion-col>
+      <ion-col size=7>
+        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">Dinner</h6>
+        <p (click)="ClickTORecipeTracker()">Lorem Ipsum is simply dummy text</p>
+        <p (click)="ClickTORecipeTracker()">of the printing and typesetting.</p>
+      </ion-col>
+      <ion-col size=3>
+        <h6 class="Meal-plan-h6-2">350 KCAL</h6>
+        <ion-row>
+          <img class="meal-heart-img" src="assets/imgs/heart.png">
+          <img class="meal-search-img" src="assets/imgs/search.png" (click)="ClickTORecipe()">
+        </ion-row>
+      </ion-col>
+      </ion-row>
+    </div>
+    <br><br>
+    <!-- <div class="container"> -->
+        <!-- <div class="scroll" scrollY="true">
+          <div class="item">
+            <img src="assets/imgs/Group1.png" alt="">
+            
+          </div>
+          <div class="item">
+            <img src="assets/imgs/Group.png" alt="">
+            
+          </div>
+          </div> -->
+          <!-- <ion-slides [options]="slideOpts">
+              <ion-slide>
+                  <div class="item">
+                <img src="assets/imgs/Group1.png" alt="" >
+              </div>
+              </ion-slide>
+              <ion-slide>
+                  <div class="item">
+                <img src="assets/imgs/Group.png" alt="">
+              </div>
+              </ion-slide>
+            </ion-slides>
+    </div>      -->
+    <br>
+    <div class="Track-weight-div">
+      <ion-row>
+        <ion-icon class="back-icon" name="ios-arrow-back"></ion-icon>
+        <img src="assets/imgs/food-scale.png">
+        <ion-col size=1></ion-col>
+        <ion-col>
+          <h6>Track your weight</h6>
+          <ion-button class="track-weight-btn" (click)=" presentAlert()">Update</ion-button>
+        </ion-col>
+        <ion-icon class="forward-icon" name="ios-arrow-forward"></ion-icon>
+      </ion-row>
+    </div>
+    <h4 class="h4">Water</h4>
+
+    <div class="water-div">
+      <ion-row>
+      <img class="glass" (click)="addGlass(1)" src="assets/imgs/Layer{{glasses[0] || '42'}}.png">
+      <img class="glass" (click)="addGlass(2)" src="assets/imgs/Layer{{glasses[1] || '42'}}.png">
+      <img class="glass" (click)="addGlass(3)" src="assets/imgs/Layer{{glasses[2] || '42'}}.png">
+      <img class="glass" (click)="addGlass(4)" src="assets/imgs/Layer{{glasses[3] || '42'}}.png">
+      <img class="glass" (click)="addGlass(5)" src="assets/imgs/Layer{{glasses[4] || '42'}}.png">
+      <img class="glass" (click)="addGlass(6)" src="assets/imgs/Layer{{glasses[5] || '42'}}.png">
+      <img class="glass" (click)="addGlass(7)" src="assets/imgs/Layer{{glasses[6] || '42'}}.png">
+      <img class="glass" (click)="addGlass(8)" src="assets/imgs/Layer{{glasses[7] || '42'}}.png">
+    </ion-row>
+    </div>
+  <div class="awin-div">
+
+  </div>
+</ion-content>

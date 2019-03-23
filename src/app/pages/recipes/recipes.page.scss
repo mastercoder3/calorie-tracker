@@ -1,0 +1,138 @@
+ion-toolbar{
+    --background:white;
+    height: 60px !important;
+ }
+ ion-title{
+  color: #8b008b;
+    font-size: 18px;
+    padding-top: 5px;
+ }
+ .back-icon{
+     font-size: 20px;
+     padding-top: 5px;
+     color: #8b008b;
+ }
+ ion-content{
+    --background: linear-gradient(to left, #8b008b,#e15f5f);
+    max-height: 100%;
+}
+
+.search-div{
+    height: 45px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+.search-div h4{
+    background: linear-gradient(to right,#8b008b,#d34848);
+-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 7%;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    bottom: 4px;
+}
+.search-icon{
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 12px;
+    font-size: 20px;
+}
+.h4{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+.recipes-div{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+}
+.avatar-img{
+    height: 80px;
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.recipes-div p{
+    font-size: 13px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 15px;
+}
+.recipes-div h6{
+    margin-left: 10px;
+    position: relative;
+    bottom: 9px;
+}
+@media (min-width: 320px) and  (max-width: 362px){
+    .recipes-div p{
+        font-size: 11px;
+        margin-left: 10px;
+        position: relative;
+        bottom: 15px;
+    }
+    .recipes-div h6{
+        margin-left: 10px;
+        position: relative;
+        bottom: 9px;
+    }
+}
+.add-img{
+    margin-top: 25px;
+    height: 40px;
+    width: 40px;
+}
+
+.recipes-div2{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+}
+.avatar-img{
+    height: 80px;
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.recipes-div2 p{
+    font-size: 13px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 15px;
+    opacity: 0.4;
+}
+.recipes-div2 h6{
+    margin-left: 10px;
+    position: relative;
+    bottom: 9px;
+    opacity: 0.4;
+}
+@media (min-width: 320px) and  (max-width: 362px){
+    .recipes-div2 p{
+        font-size: 11px;
+        margin-left: 10px;
+        position: relative;
+        bottom: 15px;
+        opacity: 0.4;
+    }
+    .recipes-div2 h6{
+        margin-left: 10px;
+        position: relative;
+        bottom: 9px;
+        opacity: 0.4;
+    }
+}
+.add-img2{
+    margin-top: 25px;
+    height: 40px;
+    width: 40px;
+    opacity: 0.4;
+}
+.awin-div{
+    height: 100px;
+    width: 100%;
+}

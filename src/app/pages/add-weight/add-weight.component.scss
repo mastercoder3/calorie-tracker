@@ -1,0 +1,63 @@
+.container{
+    width: 100% !important;
+    height: 173px !important;
+    // background-color: #FF3A95 !important;
+    position: relative;
+    top: 30% !important;
+    background: linear-gradient( #8b008b,#e15f5f) !important;
+}
+
+.heading{
+    position: relative;
+    top: -25px !important;
+}
+
+.heading > h4{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.heading > h4 > img{
+    display: inline;
+    position: relative;
+    top: 10px !important;
+}
+
+@media (min-width: 320px) and (max-width: 350px){
+    .heading{
+        position: relative;
+        top: -15px !important;
+    }
+    
+    .heading > h4{
+        color: white;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 1em;
+    }
+    
+    .heading > h4 > img{
+        display: inline;
+        position: relative;
+        top: 10px !important;
+    }
+}
+
+ion-input{
+    --background : white !important;
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+ion-button{
+    --border-radius: 30px;
+   position: relative;
+   left:25% !important;
+}
+
+.btnDiv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

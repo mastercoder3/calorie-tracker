@@ -1,0 +1,291 @@
+// .circle-div{
+//     height:100%;
+//     width: 450px;
+//     margin-left: -45px;
+// }
+// .circle-img{
+//     position: relative;
+//     top: 60%;
+// }
+
+// .add-img1{
+//     position: relative;
+//     bottom: 150px;
+//     height: 60px;
+//     width: 60;
+// }
+// .add-img2{
+//     position: relative;
+//     bottom: 200px;
+//     height: 70px;
+//     width: 70;
+// }
+// .add-img3{
+//     position: relative;
+//     bottom: 223px;
+//     left: 30px;
+//     height: 60px;
+//     width: 60;
+// }
+// .add-img4{
+//     position: relative;
+//     bottom: 207px;
+//     left: 55px;
+//     height: 70px;x`
+//     width: 70;
+    
+// }
+// .add-img5{
+//     position: relative;
+//     bottom: 152px;
+//     left: 75px;
+//     height: 60px;
+//     width: 60;
+// }
+// .close-div{
+//     height: 60px;
+//     width: 60px;
+//     display: block;
+//     margin-right: auto;
+//     margin-left: auto;
+//     margin-bottom:20px;
+// }
+// @media (min-width: 411px) and (max-width: 440px){
+//     .circle-div{
+//         height:100%;
+//         width: 450px;
+//         margin-left: -55px;
+//     }
+//     .circle-img{
+//         position: relative;
+//         top: 60%;
+//         max-width: 115% !important;
+//     }
+    
+//     .add-img1{
+//         margin-bottom: 20%;
+//         height: 70px;
+//         width: 70;
+//     }
+//     .add-img2{
+//         position: relative;
+//         bottom: 242px;
+//         height: 80px;
+//         width: 80;
+//     }
+//     .add-img3{
+//         position: relative;
+//         bottom: 265px;
+//         left: 35px;
+//         height: 70px;
+//         width: 70;
+//     }
+//     .add-img4{
+//         position: relative;
+//         bottom: 246px;
+//         left: 60px;
+//         height: 80px;
+//         width: 80;
+        
+//     }
+//     .add-img5{
+//         position: relative;
+//         bottom: 180px;
+//         left: 80px;
+//         height: 70;
+//         width: 70;
+//     }
+//     .close-div{
+//         height: 70px;
+//         width: 70px;
+//         display: block;
+//         margin-right: auto;
+//         margin-left: auto;
+//         margin-bottom:20px;
+//     }
+// }
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: url("./../../../assets/imgs/share.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 60% !important;
+    background-position-x: 50%;
+    background-size: 120% 25%;
+    display: block;
+}
+
+.images{
+    display: inline-block
+}
+
+.images img{
+    height: 60px;
+    width: 60;
+}
+
+.footer{
+    position: fixed;
+    bottom: 10px !important;
+    width: 100%;
+}
+
+.footer img{
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 411px) and (max-width: 440px){
+    .add-img1{
+        position: absolute;
+        top: 56%;
+    }
+    .add-img2{
+        position: absolute;
+        top: 46%;
+        left: 20%;
+        height: 70px !important;
+        width: 65px !important;
+    }
+    .add-img3{
+        position: absolute;
+        top: 43%;
+        left: 45%;
+    }
+    .add-img4{
+        position: absolute;
+        top: 46%;
+        left: 64%;
+        height: 70px !important;
+        width: 70px !important;
+    }
+    .add-img5{
+        position: absolute;
+        top: 55%;
+        left: 85%;
+    }
+}
+@media (min-width: 360px) and (max-width: 374px){
+    .add-img1{
+        position: absolute;
+        top: 56%;
+    }
+    .add-img2{
+        position: absolute;
+        top: 46%;
+        left: 20%;
+        height: 70px !important;
+        width: 65px !important;
+    }
+    .add-img3{
+        position: absolute;
+        top: 43%;
+        left: 45%;
+    }
+    .add-img4{
+        position: absolute;
+        top: 46%;
+        left: 64%;
+        height: 70px !important;
+        width: 70px !important;
+    }
+    .add-img5{
+        position: absolute;
+        top: 55%;
+        left: 85%;
+    }
+}
+@media (min-width: 320px) and  (max-width: 359px){
+    .add-img1{
+        position: absolute;
+        top: 56%;
+    }
+    .add-img2{
+        position: absolute;
+        top: 46%;
+        left: 20%;
+        height: 70px !important;
+        width: 65px !important;
+    }
+    .add-img3{
+        position: absolute;
+        top: 43%;
+        left: 46%;
+    }
+    .add-img4{
+        position: absolute;
+        top: 46%;
+        left: 64%;
+        height: 70px !important;
+        width: 70px !important;
+    }
+    .add-img5{
+        position: absolute;
+        top: 55%;
+        left: 85%;
+    }
+}
+@media (min-width: 375px) and  (max-width: 410px){
+    .add-img1{
+        position: absolute;
+        top: 56%;
+    }
+    .add-img2{
+        position: absolute;
+        top: 46%;
+        left: 20%;
+        height: 70px !important;
+        width: 65px !important;
+    }
+    .add-img3{
+        position: absolute;
+        top: 43%;
+        left: 45%;
+    }
+    .add-img4{
+        position: absolute;
+        top: 46%;
+        left: 64%;
+        height: 70px !important;
+        width: 70px !important;
+    }
+    .add-img5{
+        position: absolute;
+        top: 55%;
+        left: 85%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .add-img1{
+        position: absolute;
+        top: 56%;
+    }
+    .add-img2{
+        position: absolute;
+        top: 46%;
+        left: 20%;
+        height: 70px !important;
+        width: 65px !important;
+    }
+    .add-img3{
+        position: absolute;
+        top: 43%;
+        left: 45%;
+    }
+    .add-img4{
+        position: absolute;
+        top: 46%;
+        left: 64%;
+        height: 70px !important;
+        width: 70px !important;
+    }
+    .add-img5{
+        position: absolute;
+        top: 55%;
+        left: 85%;
+    }
+}

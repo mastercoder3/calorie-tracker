@@ -1,0 +1,7 @@
+{
+  "name": "Health_Tracker",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

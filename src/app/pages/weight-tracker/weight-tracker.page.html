@@ -1,0 +1,195 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-row>
+    <ion-icon class="back-icon" name="arrow-back"></ion-icon>
+    <ion-title>Weight-Tracker</ion-title>
+  </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+<div class="container">
+    <div class="profile">
+        <ion-row>
+          <ion-col size="2">
+            <div class="img"> 
+             <img src="./assets/imgs/userImage.png">
+            </div> 
+          </ion-col>
+          <ion-col size="7" class="text">
+           <h2>Alex Stone</h2>
+           <p>Program: <b>Lose Weight</b></p>
+           <p>Weight: <b>65Kg</b></p>
+           <p>Goal Weight: <b>65Kg</b></p>
+          </ion-col>
+          <ion-col size="3" text-right class="cog"> 
+           <ion-icon name="cog" (click)="openSettings()" ></ion-icon>
+           <p>1600 calories / Day</p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="buttonbar" >
+          <ion-col size=5.7>              
+            <ion-button [class.buttonActive]="selector === 'weight' " [class.buttonDeactive]="selector === 'nutrition' " shape="round"  (click)="changeSwitchCase('weight')">
+              <p>Weight</p>
+             </ion-button>
+         </ion-col>
+         <ion-col size="0.6"></ion-col>
+         <ion-col size=5.7>
+           <ion-button [class.buttonActive]="selector === 'nutrition' " [class.buttonDeactive]="selector === 'weight' " shape="round" (click)="changeSwitchCase('nutrition')">
+             <p>Nutrition</p>
+           </ion-button>
+       </ion-col>
+        </ion-row>
+        <div class="container" [ngSwitch]="selector">
+           <div  *ngSwitchCase="'weight'"  class="weight" >
+               <ion-button shape="round" id="update-weight"  (click)="presentAlert()">
+                 <p id="update-weight-p">Update Weight</p>
+               </ion-button>
+               <div class="graph-canvas">
+                   <ion-row>
+                   <ion-col size="1" class="kg"><img src="./assets/imgs/KG.png"></ion-col>
+                   <ion-col size="11">
+                   <canvas #barCanvas class="bar"></canvas>
+                   <p>Times in week</p>
+                   </ion-col>
+                   </ion-row>
+               </div>
+               <div class="weight-history">
+                   <h2 class="card-header">Weight History</h2>
+                   <ion-row>
+                    <ion-col text-left>
+                     70.5 kg
+                    </ion-col>
+                      <ion-col text-right>
+                       17 April 2018
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                      <ion-col text-left>
+                         75.3 kg
+                       </ion-col>
+                      <ion-col text-right>
+                        23 April 2018
+                       </ion-col>
+                     </ion-row>
+                    <ion-row>
+                     <ion-col text-left>
+                       74.1 kg
+                     </ion-col>
+                     <ion-col text-right>
+                        24 April 2018
+                     </ion-col>
+                    </ion-row>
+                  </div>
+                  <div class="bmi">
+                     <ion-row>
+                       <ion-col text-left>
+                         <h1>BMI-24.9</h1>
+                       </ion-col>
+                       <ion-col text-right><button ion-button clear>Normal</button></ion-col>
+                     </ion-row>
+                     <ion-row>
+                       <ion-col text-center>
+                         Your healthy Weight
+                         <br>
+                         <b>60kg - 75kg</b>
+                       </ion-col>
+                     </ion-row>
+                   </div>
+             </div>
+             <div *ngSwitchCase="'nutrition'" class="nutrition">
+               <ion-button shape="round" id="update-weight">
+                 <p id="update-weight-p">Change Diet</p>
+               </ion-button>
+               <div class="graph-canvas">
+                    <h2>Balance Diet</h2>
+                <ion-row>
+                  <ion-col text-center size="8" class="doughnut">
+                    <canvas style="height: 120%; width: 80%;" #doughnutCanvas> </canvas>
+                  </ion-col>
+                  
+                  <ion-col size="4" class="doughnutbuttons">
+                
+                      <ion-button class="doughnutchart-btn" id="button1">
+                     <img src="./assets/imgs/003.png" class="doughnutchart-img" ><span class="chart-txt"> Carbs 50%</span>
+                    </ion-button>
+                     <ion-button color="btn2" class="doughnutchart-btn" color="danger">
+                      <img src="./assets/imgs/002.png" class="doughnutchart-img">  <span class="chart-txt"> Prot 20%</span>
+                    </ion-button>
+                    <ion-button color="btn3" class="doughnutchart-btn" color="warning">
+                     <img src="./assets/imgs/001.png" class="doughnutchart-img">  <span class="chart-txt"> Fat 50%</span>
+                    </ion-button>
+             
+                  </ion-col>
+                </ion-row>
+            </div>
+            <ion-row>
+              <ion-col>
+                <h1 class="nutrition-head">Nutrients</h1>
+              </ion-col>
+            </ion-row>
+            <ion-row class="nutrient-bar">
+              <ion-col size="3">
+                <div class="div1">
+                  <h5>250gr</h5>
+                  <p>Carbs</p>
+                </div>
+              </ion-col>
+              <ion-col size="1"></ion-col>
+              <ion-col size="3">
+                <div class="div1">
+                  <h5>69gr</h5>
+                  <p>Prot</p>
+                </div>
+              </ion-col>
+              <ion-col size="1"></ion-col>
+              <ion-col size="3">
+                <div class="div1">
+                  <h5>30gr</h5>
+                  <p>Fat</p>
+                </div>
+              </ion-col>
+            </ion-row>
+            <div class="outer-loader-div">
+              <ion-row>
+                <ion-col size="6">
+                  <h4>Progress Bar</h4>
+                </ion-col>
+                <ion-col size="3"></ion-col>
+                <ion-col size="3">
+                  <p id="otl-p">70%</p>
+                </ion-col>
+              </ion-row>
+              <div class="inner-loader-div">
+                 <div class="loader-div">
+             
+                 </div>
+              </div>
+              <ion-row class="medals">
+                  <ion-col size="3">
+                      <img src="./assets/imgs/medal3.png" style="width: 25px">
+                    <br>
+                    <p id="medals-p">0-40%</p>
+                  </ion-col>
+                  <ion-col size="1"></ion-col>
+                  <ion-col size="3">
+                    <img src="./assets/imgs/medal2.png" style="width: 25px">
+                    <br>
+                    <p id="medals-p">41-69%</p>
+                  </ion-col>
+                  <ion-col size=".5"></ion-col>
+                  <ion-col size="4">
+                      <img src="./assets/imgs/medal1.png" style="width: 25px"> 
+                    <p id="medals-p">70-100%</p>
+                  </ion-col>
+              </ion-row>
+             </div>
+
+             </div>
+       </div>
+       </div>
+      
+</div>
+<div class="endDiv">&nbsp;</div>
+</ion-content>

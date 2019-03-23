@@ -1,0 +1,371 @@
+ion-toolbar{
+  --background:white;
+  height: 50px !important;
+}
+ion-title{
+  background: linear-gradient(to right,#d34848 40%,#8b008b 100%);
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.back-icon{
+   font-size: 20px;
+   padding-top: 5px;
+   color: #8b008b;
+}
+.container{
+    width: 100%;
+    height: 120%;
+}
+.profile{
+    margin-top: 5%;
+    height: 130px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 7px;
+}
+.img{
+    border-radius: 50px;
+    height: 55px;
+    width: 55px;
+    margin-top: 12px;
+    margin-left: 5px;  
+}
+.text h2{
+    color: #8d028a;
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-top: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text p{
+    margin-left: 16px;
+    margin-top: -12px;
+    font-size: 13px;  
+    line-height: 1.5em;
+    opacity: .6;
+}
+.cog ion-icon{
+    font-size: 20px;
+    margin-top: 12px;
+    margin-left: -4px;
+    font-weight: bold;
+}
+.cog p{
+    font-size: 16px;
+    color: #8d028a;
+    font-weight: bold;
+    margin-top: -1px;
+    margin-right: 5px;
+}
+ion-content{
+    --background: linear-gradient( #8b008b,#e15f5f);
+    max-height: 100%;
+}
+.buttonbar{
+margin-top: 15px;
+}
+.container #update-weight{
+  min-width: 100%;
+  margin-left:  auto;
+  margin-right: auto;
+  margin-top: 13px;
+  height: 45px;
+  --box-shadow: none;
+  border-radius: 20px;
+  --background : white;
+  #update-weight-p{
+    background: -webkit-linear-gradient(#e15f5f, #8b008b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: none;
+      font-size: 18px;
+      font-weight: bold;
+  }
+}
+.graph-canvas{
+    margin-top: 5%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: white;
+    min-height: 100%;
+    p{
+      font-size: 12px;
+      font-weight: 400;
+      margin-left: 35%;
+    }
+    h2{
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 10%;
+      padding-top: 3%;
+      text-align: center;
+      opacity: .8;
+    }
+    .doughnutbuttons{
+      height: 8vh;
+      width: 100%;
+      margin-top: 4vh;
+      margin-left: -2vh;
+      
+      #button1{
+        --background: #549eff;
+      }
+    }
+    .doughnutchart-btn{
+        width: 100%;
+        height: 70% !important;
+        box-shadow: none;
+        border-radius: 6px;
+        font-size: 6px;
+        text-transform:none;
+      }
+      
+      .doughnutchart-img{
+        height: 18px;
+        width: auto;
+        margin-right: 10px;
+        margin-left: 2%;
+      }
+      .chart-txt{
+        font-size: 16px;
+        font-weight: 300;
+        color: white;
+      }
+      .graph-canvas{
+        padding-top: 5px;
+      }
+      .kg {
+          margin-top: 25%;
+      }
+      .bar{
+        margin-top: 14px;
+        margin-left: -10px;
+        height: 140px;
+      }
+      .doughnut{ 
+        height: 100%;
+        width: 100%;
+       
+    }
+    
+}
+.weight-history{
+    border-radius: 10px;
+    background-color: white;
+    padding: 5%;
+    margin-top: 6%;
+    margin-bottom: 15px;
+    min-height: 60%;
+    .card-header{
+        margin-top: 1%;
+    }
+    .row{
+      border-bottom: 1px solid #cccccc;
+      height: 50px;
+     
+    }
+    .col{
+      line-height: 43px;
+      font-size: 15px;
+    }
+    .col:last-child{
+      color: #999999;
+    }
+    .row:last-child{
+      border-bottom: none;
+    }
+  }
+  .bmi{
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    h1{
+      font-size: 20px;
+      font-weight: bold;
+      color: #414141;
+      margin-bottom: 0;
+      margin-top: 2px !important;
+      margin-left: 5px;
+    }
+    button{
+      background-color: #70d85b;
+      color: white;
+      border-radius: 5px;
+      margin: 0;
+      height: 24px;
+    }
+    .col{
+      font-size: 18px;
+    }
+  }
+  .card-header{
+    font-size: 20px;
+    font-weight: bold;
+    color: #414141;
+    margin-bottom: 0;
+    margin-top: 2px !important;
+    margin-left: 5px;
+  }
+  .endDiv{
+      height: 200px !important;
+      width: 100%;
+      position: relative;
+      bottom: 0px !important;
+      z-index: -111;
+  }
+  .nutrition {
+    height: 100%;
+    width: 100%;
+    .nutrition-head{
+      color: white;
+      font-size: 22px;
+      margin-top: 1%;
+      font-weight: 600;
+    }
+    .nutrient-bar{
+      margin-top: -8%;
+      width: 100%;
+      margin-left: 2%;
+    }
+    .div1{
+      background-color: white; 
+      height: 75%;
+      width: 90px;
+      border-radius: 8px;
+       
+      p{
+        text-align: center;
+        font-size: 12px;
+        margin-top: -10px;  
+      }
+      h5{
+        background: linear-gradient(to right,#e15f5f, #8b008b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 10%;
+      }
+    }
+    .outer-loader-div{
+      height: 100%;
+      width: 100%;
+      background-color:white;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 8%;
+   }
+   .outer-loader-div h4{
+     font-size: 14px;
+     margin-left: 14%;
+   }
+    .outer-loader-div #otl-p{
+      font-size: 14px;
+      font-weight: 400;
+      background: linear-gradient(to right,#8b008b, #e15f5f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      bottom: 5%;
+      top: 10%;
+      left: 35%;
+   }
+   .outer-loader-div {
+     width: 100%;
+     height: 100%;
+     .medals img{
+       height: 50%;
+       width: 40%;
+      margin-left: 50%;
+      margin-top: 10%;
+     }
+     .medals #medals-p{
+       color: black !important;
+       font-size: 12px;
+       margin-top: -4%;
+       padding-left: 40%;
+      }
+     }
+   
+   .inner-loader-div{
+      height: 5%;
+      width: 85%;
+      background-color:#F5F5F5;
+      display: block;
+      margin-top: 3%;
+      margin-right: auto;
+      margin-left: auto;
+   }
+   .loader-div{
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to right,#8b008b, #e15f5f);
+      margin-top: -5%;
+   }
+  }
+.buttonActive{
+    --background: white;
+    border-radius: 20px;
+    width: 98%;
+    height: 35px;;
+    --box-shadow: none; 
+ p{
+    background: -webkit-linear-gradient(#e15f5f, #8b008b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: 550;
+}
+}
+.buttonDeactive{
+    --background: none !important;
+    border-radius: 20px;
+    width: 98%;
+    height: 35px;;
+    --box-shadow: none; 
+    --border-color: white; 
+    --border-style:solid;
+    --border-width: 1px;
+    text-transform: none;
+    .buttonDeactive > p{
+    color: white;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: 550;
+}
+}
+// .buttonbar ion-button{
+//   --background: none !important;
+//   border-radius: 20px;
+//   width: 98%;
+//   height: 35px;;
+//   --box-shadow: none; 
+// }
+// .buttonbar p{
+//   background: -webkit-linear-gradient(#e15f5f, #8b008b);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   text-transform: lowercase;
+//   font-size: 16px;
+//   font-weight: 550;
+// }
+// .buttonbar p::first-letter{
+//    text-transform: capitalize;
+// }
+@media (min-width: 320px) and  (max-width: 360px){
+  .chart-txt{
+    font-size: 13px !important;
+    font-weight: 300;
+    color: white;
+  }
+}

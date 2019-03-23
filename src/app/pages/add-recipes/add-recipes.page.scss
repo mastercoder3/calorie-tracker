@@ -1,0 +1,109 @@
+ion-toolbar{
+    --background:white;
+     height: 60px !important;
+ }
+ ion-header{
+     height: 60px !important;
+ }
+ ion-title{
+    color: #8b008b;
+    font-size: 18px;
+    padding-top: 5px;
+ }
+ .back-icon{
+     font-size: 20px;
+     padding-top: 5px;
+     color: #8b008b;
+ }
+ ion-content{
+    --background: linear-gradient( #8b008b,#e15f5f);
+    max-height: 100%;
+}
+.container {
+    display: block;
+    width: 100%;
+    overflow: hidden; 
+    white-space: nowrap;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .scroll {
+      overflow: auto;
+    }
+  }
+  .item{
+    display: inline-block;
+    margin-left: 1px;
+    outline: none;
+}
+
+.item > img{
+    width: 90% !important;
+    height: 25vh;
+}
+.like-img{
+    height: 13px;
+    width: 13px;
+    position: relative;
+    left: 65%;
+    margin-top: 4px;
+}
+.item p{
+    color: white;
+    font-size: 14px;
+    margin-top: -0px;
+    position: relative;
+    left: 5%;
+}
+.Add-recipe-div{
+    background-color: white;
+    height: 55px;
+    width: 100%;
+    border-radius: 30px;
+}
+.Add-recipe-div img{
+    height: 27px;
+    width: 27px;
+    margin-left: 20%;
+    margin-top: 12px;
+}
+.Add-recipe-div h6{
+background: linear-gradient(to right,#d34848,#8b008b);
+-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+}
+
+.awin-div{
+    height: 100px;
+    width: 100%;
+}
+.go-premium-div{
+    background-color: white;
+    height: 55px;
+    width: 100%;
+    border-radius: 30px;
+}
+.go-premium-div img{
+    height: 28px;
+    width: 25px;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+.go-premium-div h6{
+    background: linear-gradient(to right,#d34848,#8b008b);
+-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+}
+.item1{
+    display: inline-block;
+    margin-left: 20px;
+    outline: none;
+    margin-top: 20px;
+}
+.item1 > img{
+    width: 100% !important;
+    height: 120px;
+}
