@@ -14,7 +14,7 @@ export class AddRecipesPage implements OnInit {
   }
 
   Recipe(){
-    this.router.navigate(['/recipe-tracker']);
+    this.router.navigate(['/dashboard/recipe-tracker']);
 }
 goback(){
   let x: Array<string> = JSON.parse(localStorage.getItem('last'))

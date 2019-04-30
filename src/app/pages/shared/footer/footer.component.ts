@@ -19,18 +19,18 @@ export class FooterComponent implements OnInit {
   }
 
   addRecipe(){
-    this.router.navigate(['/add-recipes']);
+    this.router.navigate(['/dashboard/add-recipes']);
   }
   home(){
-    this.router.navigate(['/calorie-tracker']);
+    this.router.navigate(['/dashboard/calorie-tracker']);
   }
 
   weightTracker(){
-    this.router.navigate(['weight-tracker']);
+    this.router.navigate(['/dashboard/weight-tracker']);
   }
 
   nutrient(){
-    this.router.navigate(['/nutrient']);
+    this.router.navigate(['/dashboard/nutrient']);
   }
 }
 

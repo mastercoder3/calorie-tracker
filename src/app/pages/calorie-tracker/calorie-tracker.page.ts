@@ -96,9 +96,9 @@ export class CalorieTrackerPage implements OnInit {
     this.helper.presentModal1();
   }
   ClickTORecipeTracker(){
-    this.router.navigate(['/recipe-tracker']);
+    this.router.navigate(['/dashboard/recipe-tracker']);
   }
   ClickTORecipe(){
-    this.router.navigate(['/recipes']);
+    this.router.navigate(['/dashboard/recipes']);
   }
 }

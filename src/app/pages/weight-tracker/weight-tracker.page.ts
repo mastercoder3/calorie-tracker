@@ -137,7 +137,7 @@ export class WeightTrackerPage implements OnInit {
     }
 
     openSettings(){
-      this.router.navigate(['profile-setting']);
+      this.router.navigate(['/dashboard/profile-setting']);
     }
 
     openModal(){

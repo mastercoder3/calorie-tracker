@@ -21,6 +21,6 @@ export class ModalComponent implements OnInit {
 
   async openBreakfast(){
     await this.closeModal();
-    this.router.navigate(['/recipes'])
+    this.router.navigate(['/dashboard/recipes'])
   }
 }
