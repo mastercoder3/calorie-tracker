@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-profile-setting',
@@ -11,9 +13,17 @@ export class ProfileSettingPage implements OnInit {
   isOpen: boolean = false;
   isOpen1: Array<boolean>=[ false, false, false, false, false, false, false, false, false, false, false, false];
   index: number;
-  constructor(private router:Router) { }
+  lang: any;
+  constructor(private router:Router, public translate: TranslateService) {
+    this.translate.setDefaultLang(this.lang);
+    this.translate.use(this.lang);
+   }
 
   ngOnInit() {
+  }
+
+  switchLanguage(){
+    this.translate.use(this.lang);
   }
 
   doSomethingOnOpen(val){

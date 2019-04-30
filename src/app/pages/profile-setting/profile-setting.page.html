@@ -8,7 +8,7 @@
   </ion-header>
 <ion-content>
 <div class="container">
-  <h1 id="profile-header">My Profile</h1>
+  <h1 id="profile-header">{{'PROFILE' | translate}}</h1>
   <div class="profile-avatar">
       <img src="./assets/imgs/avatar.png">
       <div class="profile-avatar-plus">
@@ -168,7 +168,21 @@
           <hr *ngIf="isOpen1[11]">
       </accordion-group>
         </accordion>
+        
+        <ion-list class="selector-list">
+                <ion-item class="selector-listt">
+             
+                  <ion-select class="custom-select" okText="Okay" cancelText="Dismiss"  [(ngModel)]="lang" (ionChange)="switchLanguage()">
+                    <ion-select-option value="en">English</ion-select-option>
+                    <ion-select-option value="mex">Spanish</ion-select-option>
+             
+                  </ion-select>
+                </ion-item>
+             
+              </ion-list>
         <br><br><br><br><br>
     </div>
 </div>
+
+
 </ion-content>

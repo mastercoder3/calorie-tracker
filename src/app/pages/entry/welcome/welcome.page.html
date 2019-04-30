@@ -1,6 +1,6 @@
 <ion-content>
 <div  class="container" >
-  <h2>Welcome to Quinoapp</h2>
+  <h2>{{'Welcome' | translate}}</h2>
   <h4>Your Nutrition App</h4>
 
 <img src="assets/imgs/logo.png" alt="">
@@ -8,11 +8,10 @@
   <div class="content" style="padding: 0 40px">
 
     <ion-button class="button" color="light" (click)="step1()"><p>Sign Up</p></ion-button>
-    <!-- <h5>{{ 'HOME' | translate }}</h5> -->
+    <h5>Already a member?</h5>
     <ion-button class="button" color="light" (click)="login()"><p>Login</p></ion-button>
 
   </div>
-<!-- 
   <ion-list class="selector-list">
     <ion-item class="selector-listt">
  
@@ -23,6 +22,6 @@
       </ion-select>
     </ion-item>
  
-  </ion-list> -->
+  </ion-list>
 </div>
 </ion-content>

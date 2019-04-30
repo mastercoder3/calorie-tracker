@@ -144,7 +144,7 @@ ion-toolbar{
             margin-left: -18%;
             margin-right: auto;
             margin-bottom: 0%;
-        }
+        } 
     }
  }
  .container .endDiv{
@@ -153,4 +153,21 @@ ion-toolbar{
     position: absolute;
     bottom: 0px !important;
     z-index: -111;
+ }
+
+ .selector-list{
+    border-radius: 15px;
+    background-color:#d34848;
+    border:#d31cc4 3px solid;
+    height: 10%;
+    margin-top: -5%;
+    margin-left: 30px;
+    width: 70%;
+ }
+ .selector-listt{
+    --background:#d34848;
+    --color: white !important;
+    font-size: 2.5vh;
+    margin-top: -10px;
+ 
  }

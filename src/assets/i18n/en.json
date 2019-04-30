@@ -1,4 +1,8 @@
 {
-    "HELLO": "Already a member"
-           
-  }
+    "Welcome" : "Bienvenidos a Quinoapp",
+    "YourNutritionApp" : "Tu app de nutrición personalizada",
+    "SignUp" : "Registrate",
+    "Login" : "Ingresa",
+    
+    "PROFILE" : "My Profile"
+}

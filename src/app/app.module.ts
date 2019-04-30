@@ -11,8 +11,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './pages/shared/footer/footer.component';
 import { ModalComponent } from './pages/modal/modal.component';
 import { AddWeightComponent } from './pages/add-weight/add-weight.component';
-
-
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -24,17 +22,17 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [AppComponent,FooterComponent, ModalComponent, AddWeightComponent],
   entryComponents: [FooterComponent, ModalComponent, AddWeightComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: (createTranslateLoader),
-        deps: [HttpClient]
-      }
-    })],
-    exports: [
-      TranslateModule
-    ],
+  imports: [BrowserModule,
+     IonicModule.forRoot(),
+      AppRoutingModule,
+      HttpClientModule,
+      TranslateModule.forRoot({
+        loader: {
+          provide: TranslateLoader,
+          useFactory: (createTranslateLoader),
+          deps: [HttpClient]
+        }
+      })],
   providers: [
     StatusBar,
     SplashScreen,
