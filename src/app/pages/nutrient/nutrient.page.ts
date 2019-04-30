@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nutrient',
@@ -6,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nutrient.page.scss'],
 })
 export class NutrientPage implements OnInit {
-
-  constructor() { }
+  lang: any;
+  constructor(public translate: TranslateService) { 
+    
+    if(localStorage.getItem('language')) {
+      this.lang=localStorage.getItem('language')
+      this.translate.setDefaultLang(this.lang);
+      this.translate.use(this.lang);
+    }
+  }
 
   ngOnInit() {
   }

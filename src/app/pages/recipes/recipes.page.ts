@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-recipes',
@@ -7,8 +8,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./recipes.page.scss'],
 })
 export class RecipesPage implements OnInit {
-
-  constructor(private router:Router) { }
+  lang: any;
+  constructor(private router:Router, public translate: TranslateService) { 
+    
+    if(localStorage.getItem('language')) {
+      this.lang=localStorage.getItem('language')
+      this.translate.setDefaultLang(this.lang);
+      this.translate.use(this.lang);
+    }
+  }
 
   ngOnInit() {
   }

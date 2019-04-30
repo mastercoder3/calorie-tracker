@@ -3,6 +3,7 @@ import { Chart } from 'chart.js';
 import { Router } from '@angular/router';
 import { HelperService } from 'src/app/services/helper.service';
 import { AlertController } from '@ionic/angular';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-weight-tracker',
@@ -16,8 +17,15 @@ export class WeightTrackerPage implements OnInit {
   selector: string = "weight";
   barChart: any;
   doughnutChart: any;
-
-  constructor(private router: Router, private helper: HelperService,public alertController: AlertController) { }
+  lang: any;
+  constructor(private router: Router, private helper: HelperService,public alertController: AlertController, public translate: TranslateService) {
+    
+    if(localStorage.getItem('language')) {
+      this.lang=localStorage.getItem('language')
+      this.translate.setDefaultLang(this.lang);
+      this.translate.use(this.lang);
+    }
+   }
 
   ngOnInit() {
     this.ChangeGraph(this.selector);

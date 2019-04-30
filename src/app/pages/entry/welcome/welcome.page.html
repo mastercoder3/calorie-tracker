@@ -1,27 +1,17 @@
 <ion-content>
 <div  class="container" >
   <h2>{{'Welcome' | translate}}</h2>
-  <h4>Your Nutrition App</h4>
+  <h4>{{'YourNutritionApp' | translate }}</h4>
 
 <img src="assets/imgs/logo.png" alt="">
 
   <div class="content" style="padding: 0 40px">
 
-    <ion-button class="button" color="light" (click)="step1()"><p>Sign Up</p></ion-button>
-    <h5>Already a member?</h5>
-    <ion-button class="button" color="light" (click)="login()"><p>Login</p></ion-button>
+    <ion-button class="button" color="light" (click)="step1()"><p>{{'SignUp' | translate}}</p></ion-button>
+    <h5>{{'Already'| translate }}</h5>
+    <ion-button class="button" color="light" (click)="login()"><p>{{'Login' | translate}}</p></ion-button>
 
   </div>
-  <ion-list class="selector-list">
-    <ion-item class="selector-listt">
- 
-      <ion-select class="custom-select" okText="Okay" cancelText="Dismiss"  [(ngModel)]="lang" (ionChange)="switchLanguage()">
-        <ion-select-option value="en">English</ion-select-option>
-        <ion-select-option value="mex">Spanish</ion-select-option>
- 
-      </ion-select>
-    </ion-item>
- 
-  </ion-list>
+  
 </div>
 </ion-content>

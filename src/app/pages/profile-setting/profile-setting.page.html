@@ -21,7 +21,7 @@
             <accordion-group class="acc" (onOpen)="doSomethingOnOpen(1)" (onClose)="doSomethingOnClose(1)">
                 <accordion-heading>
                     <accordion-toggle>
-                       <ion-row><img src="./assets/imgs/man-user.png">Change your name<ion-icon *ngIf="!isOpen1[0]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[0]" name="ios-arrow-down"></ion-icon></ion-row> 
+                       <ion-row><img src="./assets/imgs/man-user.png">{{'CHANGENAME' | translate}}<ion-icon *ngIf="!isOpen1[0]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[0]" name="ios-arrow-down"></ion-icon></ion-row> 
                       <hr *ngIf="!isOpen1[0]">
                     </accordion-toggle>
                 </accordion-heading>
@@ -33,7 +33,7 @@
             <accordion-group class="acc" (onOpen)="doSomethingOnOpen(2)" (onClose)="doSomethingOnClose(2)">
               <accordion-heading>
                   <accordion-toggle>
-                     <ion-row><img src="./assets/imgs/gear-head.png">Change your program <ion-icon *ngIf="!isOpen1[1]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[1]" name="ios-arrow-down"></ion-icon></ion-row> 
+                     <ion-row><img src="./assets/imgs/gear-head.png">{{'CHANGEPROGRAM' | translate}}<ion-icon *ngIf="!isOpen1[1]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[1]" name="ios-arrow-down"></ion-icon></ion-row> 
                     <hr *ngIf="!isOpen1[1]">
                   </accordion-toggle>
               </accordion-heading>
@@ -45,7 +45,7 @@
           <accordion-group class="acc" (onOpen)="doSomethingOnOpen(3)" (onClose)="doSomethingOnClose(3)">
             <accordion-heading>
                 <accordion-toggle>
-                   <ion-row><img src="./assets/imgs/food-scale-tool.png">Change your weight <ion-icon *ngIf="!isOpen1[2]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[2]" name="ios-arrow-down"></ion-icon></ion-row> 
+                   <ion-row><img src="./assets/imgs/food-scale-tool.png">{{'CHANGEWEIGHT' | translate}}<ion-icon *ngIf="!isOpen1[2]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[2]" name="ios-arrow-down"></ion-icon></ion-row> 
                   <hr *ngIf="!isOpen1[2]">
                 </accordion-toggle>
             </accordion-heading>
@@ -57,7 +57,7 @@
         <accordion-group class="acc" (onOpen)="doSomethingOnOpen(4)" (onClose)="doSomethingOnClose(4)">
           <accordion-heading>
               <accordion-toggle>
-                 <ion-row><img src="./assets/imgs/height.png">Change your height <ion-icon *ngIf="!isOpen1[3]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[3]" name="ios-arrow-down"></ion-icon></ion-row> 
+                 <ion-row><img src="./assets/imgs/height.png">{{'CHANGEHEIGHT' | translate}} <ion-icon *ngIf="!isOpen1[3]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[3]" name="ios-arrow-down"></ion-icon></ion-row> 
                 <hr *ngIf="!isOpen1[3]">
               </accordion-toggle>
           </accordion-heading>
@@ -69,7 +69,7 @@
       <accordion-group class="acc" (onOpen)="doSomethingOnOpen(5)" (onClose)="doSomethingOnClose(5)">
               <accordion-heading>
                   <accordion-toggle>
-                     <ion-row><img src="./assets/imgs/runner.png">Change your activity level <ion-icon *ngIf="!isOpen1[4]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[4]" name="ios-arrow-down"></ion-icon></ion-row> 
+                     <ion-row><img src="./assets/imgs/runner.png">{{'CHANGEACTIVITY' | translate}}<ion-icon *ngIf="!isOpen1[4]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[4]" name="ios-arrow-down"></ion-icon></ion-row> 
                     <hr *ngIf="!isOpen1[4]">
                   </accordion-toggle>
               </accordion-heading>
@@ -79,12 +79,12 @@
               <hr *ngIf="isOpen1[4]" >
           </accordion-group>
             
-          <ion-row class="notification"><h3>Manage my notifications</h3> <ion-toggle mode="md" checked="true"></ion-toggle></ion-row>
-          <h2 id="others-head">OTHERS</h2>
+          <ion-row class="notification"><h3>{{'NOTIFICATIONS' | translate}}</h3> <ion-toggle mode="md" checked="true"></ion-toggle></ion-row>
+          <h2 id="others-head">{{'OTHERS' | translate}}</h2>
           <accordion-group class="acc" (onOpen)="doSomethingOnOpen(6)" (onClose)="doSomethingOnClose(6)" id="info">
             <accordion-heading>
                 <accordion-toggle>
-                   <ion-row><img src="./assets/imgs/info.png" id="info">FAQ<ion-icon *ngIf="!isOpen1[5]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[5]" name="ios-arrow-down"></ion-icon></ion-row> 
+                   <ion-row><img src="./assets/imgs/info.png" id="info">{{'faq' | translate}}<ion-icon *ngIf="!isOpen1[5]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[5]" name="ios-arrow-down"></ion-icon></ion-row> 
                   <hr *ngIf="!isOpen1[5]">
                 </accordion-toggle>
             </accordion-heading>
@@ -96,7 +96,7 @@
         <accordion-group class="acc" (onOpen)="doSomethingOnOpen(7)" (onClose)="doSomethingOnClose(7)">
           <accordion-heading>
               <accordion-toggle>
-                 <ion-row><img src="./assets/imgs/phone-book.png">Contact Us<ion-icon *ngIf="!isOpen1[6]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[6]" name="ios-arrow-down"></ion-icon></ion-row> 
+                 <ion-row><img src="./assets/imgs/phone-book.png">{{'CONTACT' | translate}}<ion-icon *ngIf="!isOpen1[6]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[6]" name="ios-arrow-down"></ion-icon></ion-row> 
                 <hr *ngIf="!isOpen1[6]">
               </accordion-toggle>
           </accordion-heading>
@@ -108,7 +108,7 @@
       <accordion-group class="acc" (onOpen)="doSomethingOnOpen(8)" (onClose)="doSomethingOnClose(8)">
         <accordion-heading>
             <accordion-toggle>
-               <ion-row><img src="./assets/imgs/star.png">Rate Us<ion-icon *ngIf="!isOpen1[7]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[7]" name="ios-arrow-down"></ion-icon></ion-row> 
+               <ion-row><img src="./assets/imgs/star.png">{{'RATE' | translate}}<ion-icon *ngIf="!isOpen1[7]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[7]" name="ios-arrow-down"></ion-icon></ion-row> 
               <hr *ngIf="!isOpen1[7]">
             </accordion-toggle>
         </accordion-heading>
@@ -120,7 +120,7 @@
     <accordion-group class="acc" (onOpen)="doSomethingOnOpen(9)" (onClose)="doSomethingOnClose(9)">
       <accordion-heading>
           <accordion-toggle>
-             <ion-row><img src="./assets/imgs/rubbish-bin.png">Delete My Account<ion-icon *ngIf="!isOpen1[8]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[8]" name="ios-arrow-down"></ion-icon></ion-row> 
+             <ion-row><img src="./assets/imgs/rubbish-bin.png">{{'DELETE' | translate}}<ion-icon *ngIf="!isOpen1[8]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[8]" name="ios-arrow-down"></ion-icon></ion-row> 
             <hr *ngIf="!isOpen1[8]">
           </accordion-toggle>
       </accordion-heading>
@@ -132,7 +132,7 @@
   <accordion-group class="acc" (onOpen)="doSomethingOnOpen(10)" (onClose)="doSomethingOnClose(10)">
           <accordion-heading>
               <accordion-toggle>
-                 <ion-row><img src="./assets/imgs/friends.png">Input Your Friends!<ion-icon *ngIf="!isOpen1[9]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[9]" name="ios-arrow-down"></ion-icon></ion-row> 
+                 <ion-row><img src="./assets/imgs/friends.png">{{'InputFriends' | translate}}<ion-icon *ngIf="!isOpen1[9]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[9]" name="ios-arrow-down"></ion-icon></ion-row> 
                 <hr *ngIf="!isOpen1[9]">
               </accordion-toggle>
           </accordion-heading>
@@ -141,12 +141,12 @@
           </div>
           <hr *ngIf="isOpen1[9]">
       </accordion-group>
-      <h2 id="others-head">MY ACCOUNT</h2>
+      <h2 id="others-head">{{'ACCOUNT' | translate}}</h2>
        
       <accordion-group class="acc" (onOpen)="doSomethingOnOpen(11)" (onClose)="doSomethingOnClose(11)">
           <accordion-heading>
               <accordion-toggle>
-                 <ion-row><img src="./assets/imgs/mail.png">Email<p id="emailph" *ngIf="!isOpen1[10]">John@email.com</p><p *ngIf="isOpen1[10]"></p><ion-icon *ngIf="!isOpen1[10]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[10]" name="ios-arrow-down"></ion-icon></ion-row> 
+                 <ion-row><img src="./assets/imgs/mail.png">{{'E-MAIL' | translate}}<p id="emailph" *ngIf="!isOpen1[10]">John@email.com</p><p *ngIf="isOpen1[10]"></p><ion-icon *ngIf="!isOpen1[10]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[10]" name="ios-arrow-down"></ion-icon></ion-row> 
                 <hr *ngIf="!isOpen1[10]">
               </accordion-toggle>
           </accordion-heading>
@@ -158,7 +158,7 @@
       <accordion-group class="acc" (onOpen)="doSomethingOnOpen(12)" (onClose)="doSomethingOnClose(12)">
           <accordion-heading>
               <accordion-toggle>
-                 <ion-row><img src="./assets/imgs/telephone.png">Input Your Friends!<ion-icon *ngIf="!isOpen1[11]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[11]" name="ios-arrow-down"></ion-icon></ion-row> 
+                 <ion-row><img src="./assets/imgs/telephone.png">{{'PHONE' | translate}}<ion-icon *ngIf="!isOpen1[11]" name="ios-arrow-forward"></ion-icon><ion-icon *ngIf="isOpen1[11]" name="ios-arrow-down"></ion-icon></ion-row> 
                 <hr *ngIf="!isOpen1[11]">
               </accordion-toggle>
           </accordion-heading>
@@ -169,13 +169,12 @@
       </accordion-group>
         </accordion>
         
-        <ion-list class="selector-list">
-                <ion-item class="selector-listt">
+        <ion-list mode="md" class="selector-list">
+                <ion-item mode="md" class="selector-listt">
              
-                  <ion-select class="custom-select" okText="Okay" cancelText="Dismiss"  [(ngModel)]="lang" (ionChange)="switchLanguage()">
+                  <ion-select mode="md" class="custom-select" okText="Okay" cancelText="Dismiss"  [(ngModel)]="lang" (ionChange)="switchLanguage()" placeholder="Select language">
                     <ion-select-option value="en">English</ion-select-option>
                     <ion-select-option value="mex">Spanish</ion-select-option>
-             
                   </ion-select>
                 </ion-item>
              

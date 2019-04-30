@@ -99,7 +99,7 @@
   </thead>
 </table>
 <br>
-   <h4 class="h4">Calorie Tracker</h4>
+   <h4 class="h4">{{'Calorie' | translate}}</h4>
   
  <div class="outer-loader-div">
   <ion-row>
@@ -118,39 +118,39 @@
   </div>
  </div>
  <br>
- <h4 class="h4">Nutrient Tracker</h4>
+ <h4 class="h4">{{'Nutrient' | translate}}</h4>
  <ion-grid>
  <ion-row>
    <ion-col size="4">
  <div class="nutrient-tracker-div">
     <h6>250gr</h6>
-    <p>carbs</p>
+    <p>{{'CARB' | translate}}</p>
  </div>
   </ion-col>
   <ion-col size="4">
  <div class="nutrient-tracker-div">
     <h6>69gr</h6>
-    <p>prot</p>
+    <p>{{'PROT' | translate}}</p>
   </div>
   </ion-col>
   <ion-col size="4">
   <div class="nutrient-tracker-div">
       <h6>30gr</h6>
-      <p>fat</p>
+      <p style="margin-left: -3px;">{{'FAT' | translate}}</p>
     </div>
     </ion-col>
 </ion-row>
 </ion-grid>
 
 
-  <h4 class="h4">Meal Plans</h4>
+  <h4 class="h4">{{'MealPlan' | translate}}</h4>
   <div class="meal-plan-div" >
     <ion-row>
       <ion-col size=2>
      <img class="Meal-img" src="assets/imgs/Ellipse.png" (click)="ClickTORecipeTracker()">
     </ion-col>
     <ion-col size=7>
-      <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">Breakfast</h6>
+      <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">{{'BREAKFAST' | translate}}</h6>
       <p (click)="ClickTORecipeTracker()">Lorem Ipsum is simply dummy text</p>
       <p (click)="ClickTORecipeTracker()">of the printing and typesetting.</p>
     </ion-col>
@@ -170,7 +170,7 @@
        <img class="Meal-img" src="assets/imgs/Ellipse1.png" (click)="ClickTORecipeTracker()">
       </ion-col>
       <ion-col size=7>
-        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">Morning Snack</h6>
+        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">{{'MORNINGSNACK' | translate}}</h6>
         <p (click)="ClickTORecipeTracker()">Lorem Ipsum is simply dummy text</p>
         <p (click)="ClickTORecipeTracker()">of the printing and typesetting.</p>
       </ion-col>
@@ -190,7 +190,7 @@
        <img class="Meal-img" src="assets/imgs/Ellipse2.png" (click)="ClickTORecipeTracker()">
       </ion-col>
       <ion-col size=7>
-        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">Lunch</h6>
+        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">{{'LUNCH' | translate}}</h6>
         <p (click)="ClickTORecipeTracker()">Lorem Ipsum is simply dummy text</p>
         <p (click)="ClickTORecipeTracker()">of the printing and typesetting.</p>
       </ion-col>
@@ -210,7 +210,7 @@
        <img class="Meal-img" src="assets/imgs/Ellipse4.png" (click)="ClickTORecipeTracker()">
       </ion-col>
       <ion-col size=7>
-        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">Afternoon Snack</h6>
+        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">{{'AFTERNOONSNACK' | translate}}</h6>
         <p (click)="ClickTORecipeTracker()">Lorem Ipsum is simply dummy text</p>
         <p (click)="ClickTORecipeTracker()">of the printing and typesetting.</p>
       </ion-col>
@@ -230,7 +230,7 @@
        <img class="Meal-img" src="assets/imgs/Ellipse5.png" (click)="ClickTORecipeTracker()">
       </ion-col>
       <ion-col size=7>
-        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">Dinner</h6>
+        <h6 class="Meal-plan-h6" (click)="ClickTORecipeTracker()">{{'DINNER' | translate}}</h6>
         <p (click)="ClickTORecipeTracker()">Lorem Ipsum is simply dummy text</p>
         <p (click)="ClickTORecipeTracker()">of the printing and typesetting.</p>
       </ion-col>
@@ -275,13 +275,13 @@
         <img src="assets/imgs/food-scale.png">
         <ion-col size=1></ion-col>
         <ion-col>
-          <h6>Track your weight</h6>
-          <ion-button class="track-weight-btn" (click)=" presentAlert()">Update</ion-button>
+          <h6>{{'TrackWeight' | translate}}</h6>
+          <ion-button class="track-weight-btn" (click)=" presentAlert()">{{'UPDATE' | translate}}</ion-button>
         </ion-col>
         <ion-icon class="forward-icon" name="ios-arrow-forward"></ion-icon>
       </ion-row>
     </div>
-    <h4 class="h4">Water</h4>
+    <h4 class="h4">{{'WATER' | translate}}</h4>
 
     <div class="water-div">
       <ion-row>

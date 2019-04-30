@@ -19,44 +19,44 @@
           </ion-col>
           <ion-col size="7" class="text">
            <h2>Alex Stone</h2>
-           <p>Program: <b>Lose Weight</b></p>
-           <p>Weight: <b>65Kg</b></p>
-           <p>Goal Weight: <b>65Kg</b></p>
+           <p>{{'PROGRAM' | translate}}: <b>{{'LoseWeight' | translate}}</b></p>
+           <p>{{'WEIGHT' | translate}}: <b>65Kg</b></p>
+           <p>{{'WeightGoal' | translate}}: <b>65Kg</b></p>
           </ion-col>
           <ion-col size="3" text-right class="cog"> 
            <ion-icon name="cog" (click)="openSettings()" ></ion-icon>
-           <p>1600 calories / Day</p>
+           <p>1600 {{'cal/day' | translate}}</p>
           </ion-col>
         </ion-row>
         <ion-row class="buttonbar" >
           <ion-col size=5.7>              
             <ion-button [class.buttonActive]="selector === 'weight' " [class.buttonDeactive]="selector === 'nutrition' " shape="round"  (click)="changeSwitchCase('weight')">
-              <p>Weight</p>
+              <p>{{'WEIGHT' | translate}}</p>
              </ion-button>
          </ion-col>
          <ion-col size="0.6"></ion-col>
          <ion-col size=5.7>
            <ion-button [class.buttonActive]="selector === 'nutrition' " [class.buttonDeactive]="selector === 'weight' " shape="round" (click)="changeSwitchCase('nutrition')">
-             <p>Nutrition</p>
+             <p>{{'NUTRTION' | translate}}</p>
            </ion-button>
        </ion-col>
         </ion-row>
         <div class="container" [ngSwitch]="selector">
            <div  *ngSwitchCase="'weight'"  class="weight" >
                <ion-button shape="round" id="update-weight"  (click)="presentAlert()">
-                 <p id="update-weight-p">Update Weight</p>
+                 <p id="update-weight-p">{{'UPDATEWEIGHT' | translate}}</p>
                </ion-button>
                <div class="graph-canvas">
                    <ion-row>
                    <ion-col size="1" class="kg"><img src="./assets/imgs/KG.png"></ion-col>
                    <ion-col size="11">
                    <canvas #barCanvas class="bar"></canvas>
-                   <p>Times in week</p>
+                   <p>{{'TOW' | translate}}</p>
                    </ion-col>
                    </ion-row>
                </div>
                <div class="weight-history">
-                   <h2 class="card-header">Weight History</h2>
+                   <h2 class="card-header">{{'WH' | translate}}</h2>
                    <ion-row>
                     <ion-col text-left>
                      70.5 kg
@@ -85,13 +85,13 @@
                   <div class="bmi">
                      <ion-row>
                        <ion-col text-left>
-                         <h1>BMI-24.9</h1>
+                         <h1>{{'bmi' | translate}}-24.9</h1>
                        </ion-col>
                        <ion-col text-right><button ion-button clear>Normal</button></ion-col>
                      </ion-row>
                      <ion-row>
                        <ion-col text-center>
-                         Your healthy Weight
+                        {{'Healthy' | translate}}
                          <br>
                          <b>60kg - 75kg</b>
                        </ion-col>
@@ -100,10 +100,10 @@
              </div>
              <div *ngSwitchCase="'nutrition'" class="nutrition">
                <ion-button shape="round" id="update-weight">
-                 <p id="update-weight-p">Change Diet</p>
+                 <p id="update-weight-p">{{'DIET' | translate}}</p>
                </ion-button>
                <div class="graph-canvas">
-                    <h2>Balance Diet</h2>
+                    <h2>{{'Balanced' | translate}}</h2>
                 <ion-row>
                   <ion-col text-center size="8" class="doughnut">
                     <canvas style="height: 120%; width: 80%;" #doughnutCanvas> </canvas>
@@ -118,7 +118,7 @@
                       <img src="./assets/imgs/002.png" class="doughnutchart-img">  <span class="chart-txt"> Prot 20%</span>
                     </ion-button>
                     <ion-button color="btn3" class="doughnutchart-btn" color="warning">
-                     <img src="./assets/imgs/001.png" class="doughnutchart-img">  <span class="chart-txt"> Fat 50%</span>
+                     <img src="./assets/imgs/001.png" class="doughnutchart-img">  <span class="chart-txt"> {{'FAT' | translate}} 50%</span>
                     </ion-button>
              
                   </ion-col>
@@ -126,7 +126,7 @@
             </div>
             <ion-row>
               <ion-col>
-                <h1 class="nutrition-head">Nutrients</h1>
+                <h1 class="nutrition-head">{{'NUTRIENTS' | translate}}</h1>
               </ion-col>
             </ion-row>
             <ion-row class="nutrient-bar">
@@ -147,14 +147,14 @@
               <ion-col size="3">
                 <div class="div1">
                   <h5>30gr</h5>
-                  <p>Fat</p>
+                  <p>{{'FAT' | translate}}</p>
                 </div>
               </ion-col>
             </ion-row>
             <div class="outer-loader-div">
               <ion-row>
                 <ion-col size="6">
-                  <h4>Progress Bar</h4>
+                  <h4>{{'ProgresBar' | translate}}</h4>
                 </ion-col>
                 <ion-col size="3"></ion-col>
                 <ion-col size="3">
@@ -189,7 +189,7 @@
              </div>
        </div>
        </div>
-      
+       
 </div>
 <div class="endDiv">&nbsp;</div>
 </ion-content>

@@ -3,6 +3,7 @@ import { HelperService } from 'src/app/services/helper.service';
 import { AlertController } from '@ionic/angular';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-calorie-tracker',
@@ -22,9 +23,14 @@ export class CalorieTrackerPage implements OnInit {
     '42'
   ];
   previousUrl;
-
+  lang: any;
   constructor(private helper: HelperService,
-     public alertController: AlertController, private router: Router) {
+     public alertController: AlertController, private router: Router, public translate: TranslateService) {
+      if(localStorage.getItem('language')) {
+        this.lang=localStorage.getItem('language')
+        this.translate.setDefaultLang(this.lang);
+        this.translate.use(this.lang);
+      }
        localStorage.removeItem('last');
       this.router.events
       .pipe(

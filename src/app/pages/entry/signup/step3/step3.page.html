@@ -11,39 +11,39 @@
   
   
     <div class="gif-block">
-      <h4>Let's personalize your account</h4>
+      <h4>{{'Personlize' | translate}}</h4>
       <img src="assets/imgs/weightgif.gif">
     </div>
   
     <div class="form-area">
       <ion-row>
-        <label>Weight</label>
+        <label>{{'WEIGHT' | translate}}</label>
         <ion-col size="9">
-          <ion-input mode="md" type="text" placeholder="Weight"></ion-input>
+          <ion-input mode="md" type="text" placeholder="{{'EnterWeight' | translate}}"></ion-input>
         </ion-col>
         <ion-col size="3">
           <ion-button (tap)="step3part2()">Kg</ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
-        <label>Height</label>
+        <label>{{'HEIGHT' | translate}}</label>
         <ion-col size="9">
-          <ion-input mode="md" type="text" placeholder="Height"></ion-input>
+          <ion-input mode="md" type="text" placeholder="{{'EnterHeight' | translate}}"></ion-input>
         </ion-col>
         <ion-col size="3">
           <ion-button (tap)="step3part2()">cm</ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
-        <label>Weight Goal</label>
+        <label>{{'WeightGoal' | translate}}</label>
         <ion-col col-12>
-          <ion-input mode="md" type="text" placeholder="Weight Goal"></ion-input>
+          <ion-input mode="md" type="text" placeholder="{{'EnterWeightGoal' | translate}}"></ion-input>
         </ion-col>
       </ion-row>
     </div>
   
     <div style="padding: 0 55px;">
-      <ion-button class="button" (click)="step4()">next</ion-button>
+      <ion-button class="button" (click)="step4()">{{'NEXT' | translate}}</ion-button>
     </div>
   
   </ion-content>

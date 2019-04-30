@@ -158,16 +158,18 @@ ion-toolbar{
  .selector-list{
     border-radius: 15px;
     background-color:#d34848;
-    border:#d31cc4 3px solid;
-    height: 10%;
-    margin-top: -5%;
+    border:White 1px solid;
+    height: 8%;
     margin-left: 30px;
     width: 70%;
  }
  .selector-listt{
-    --background:#d34848;
+    --background:#D75464;
     --color: white !important;
     font-size: 2.5vh;
     margin-top: -10px;
- 
+    ion-select{
+        margin-left: 55px;
+    }
  }
+ 

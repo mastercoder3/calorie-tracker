@@ -12,24 +12,24 @@
 
 
   <div class="gif-block">
-    <h4>Start with Basic</h4>
+    <h4>{{'Basic' | translate}}</h4>
     <img src="assets/imgs/nutition.gif">
   </div>
 
   <div class="form-area">
     <ion-row>
-      <label>Name or User Name</label>
+      <label>{{'Name' | translate}}</label>
     </ion-row>  
       <ion-row>
-        <ion-input mode="md" type="text" placeholder="Write Name/User Name"></ion-input>
+        <ion-input mode="md" type="text" placeholder="{{'WriteName' | translate}}"></ion-input>
     </ion-row>
 
           <ion-row>
               <ion-col >
-                <label id="opt">DOB</label>
+                <label id="opt">{{'DOB' | translate}}</label>
               </ion-col>
               <ion-col >
-                <label id="opt">Gender</label>
+                <label id="opt">{{'GENDER' | translate}}</label>
               </ion-col> 
               <!-- <ion-col col-6>
                 <ion-row>
@@ -57,22 +57,22 @@
               </ion-col>
               <ion-col>
                   <ion-select placeholder="Select">
-                      <ion-select-option mode="md" value="male">Male</ion-select-option>
-                      <ion-select-option mode="md" value="female">Female</ion-select-option>
+                      <ion-select-option mode="md" value="male">{{'MALE' | translate}}</ion-select-option>
+                      <ion-select-option mode="md" value="female">{{'FEMALE' | translate}}</ion-select-option>
                     </ion-select>
               </ion-col>
             </ion-row>
     
-
+ 
 
     <ion-row>
-        <p class="terms"> <ion-checkbox mode="ios"></ion-checkbox>Agree to our terms &amp; conditions</p>
+        <p class="terms"> <ion-checkbox mode="ios"></ion-checkbox>{{'Agree' | translate}}</p>
     </ion-row>
   </div>
 
 
   <div style="padding: 0 55px;">
-    <ion-button (click)="step3()" class="button">next</ion-button>
+    <ion-button (click)="step3()" class="button">{{'NEXT' | translate}}</ion-button>
   </div>
 
 

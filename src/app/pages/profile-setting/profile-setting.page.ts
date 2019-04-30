@@ -24,6 +24,7 @@ export class ProfileSettingPage implements OnInit {
 
   switchLanguage(){
     this.translate.use(this.lang);
+    localStorage.setItem('language', this.lang);
   }
 
   doSomethingOnOpen(val){
