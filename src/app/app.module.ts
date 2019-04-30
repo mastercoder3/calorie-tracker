@@ -14,14 +14,15 @@ import { AddWeightComponent } from './pages/add-weight/add-weight.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
-  declarations: [AppComponent,FooterComponent, ModalComponent, AddWeightComponent],
-  entryComponents: [FooterComponent, ModalComponent, AddWeightComponent],
+  declarations: [AppComponent,FooterComponent, ModalComponent, AddWeightComponent, DashboardComponent],
+  entryComponents: [FooterComponent, ModalComponent, AddWeightComponent, DashboardComponent],
   imports: [BrowserModule,
      IonicModule.forRoot(),
       AppRoutingModule,
