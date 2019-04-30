@@ -1,0 +1,227 @@
+ion-toolbar{
+    --background:white;
+    height: 50px !important;
+ }
+
+ ion-title{
+    background: linear-gradient(to right,#d34848 40%,#8b008b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    padding-top: 5px;
+    .back-icon{
+        font-size: 20px;
+        padding-top: 5px;
+        color: #8b008b;
+ }
+}
+
+ion-content{
+    --background: linear-gradient(to right,#e15f5f,#8b008b);
+    max-height: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;   
+    h1{
+        color: white;  
+        font-size: 20px;
+        margin-left: 5%;
+        margin-right: auto;
+    }
+}
+
+.body{
+    max-width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+
+.div-challenges{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: 14px;
+    }
+    
+    #juice{
+        margin-top: 3vh;
+        width: 6vh;
+        height: 8vh;
+    }
+    #sugar{
+        width: 8vh;
+        height: 7vh;
+        margin-top: 4vh;
+    }
+    #chips{
+        margin-top: 3vh !important;
+        height: 7vh !important;
+        width: 7vh;
+    }
+    #fastfood{
+        margin-top: 1vh !important;
+        height: 7vh !important;
+        width: 7vh;
+    }
+    #alcohol{
+        margin-top: 3vh !important;
+        height: 7vh !important;
+        width: 6vh;
+    }
+    #coffee{
+        margin-top: 1vh !important;
+        height: 7vh !important;
+        width: 7vh;
+    }
+    #friedfood{
+        margin-top: 3vh !important;
+        height: 7vh !important;
+        width: 7vh;
+    }
+    #pizza{
+        margin-top: 4vh !important;
+        height: 8vh !important;
+        width: 8vh;
+    }
+    #cigg{
+        width: 9vh;
+        margin-top: 4vh;
+        height: 8vh;
+    }
+    #meat{
+        margin-top: 3vh;
+        height: 7vh;
+        width: 6vh;
+    }
+    #candy1{
+        margin-top: 4vh;
+        height: 6vh;
+        width: 6vh;
+        margin-right: -4%;
+    }
+    #candy2{
+        margin-top: 4vh;
+        height: 6vh;
+        width: 6vh;
+
+    }
+    #chocolate{
+        height: 8vh !important;
+        width: 8vh !important;
+        margin-top: 2vh;
+    }
+    #sugardrink{
+        width: 2.3vh !important;
+        height: 9vh !important;
+        margin-top: 1vh;
+    }
+    #energydrink{
+        width: 3vh !important;
+        height: 8vh !important;
+        margin-top: 2vh;
+    }
+}
+}
+
+@media(min-width: 320px) and  (max-width: 370px){
+    .body{
+        max-width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+    
+    .div-challenges{
+        height: 90%;
+        width: 90%;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 10%;
+            padding-left: 15%;
+            padding-right: 15%;
+            font-size: 14px;
+        }
+        
+        #juice{
+            width: 6vh;
+            height: 8vh;
+            margin-top: -7%;
+        }
+        #sugar{
+            width: 8vh;
+            height: 7vh;
+        }
+        #chips{
+            height: 7vh !important;
+            width: 7vh;
+        }
+        #fastfood{
+            margin-top: -5% ;
+            height: 7vh !important;
+            width: 7vh;
+        }
+        #alcohol{
+            height: 7vh !important;
+            width: 6vh;
+            margin-top: -8%;
+        }
+        #coffee{
+            height: 7vh !important;
+            width: 7vh;
+        }
+        #friedfood{
+            height: 7vh !important;
+            width: 7vh;
+        }
+        #pizza{
+            height: 8vh !important;
+            width: 8vh;
+        }
+        #cigg{
+            width: 9vh;
+            height: 8vh;
+            margin-top: -8%;
+            margin-bottom: auto;
+        }
+        #meat{
+            height: 7vh;
+            width: 6vh;
+        }
+        #candy1{
+            height: 6vh;
+            width: 6vh;
+            margin-right: -4%;
+        }
+        #candy2{
+            height: 6vh;
+            width: 6vh;
+    
+        }
+        #chocolate{
+            height: 8vh !important;
+            width: 8vh !important;
+        }
+        #sugardrink{
+            width: 2.3vh !important;
+            height: 9vh !important;
+        }
+        #energydrink{
+            width: 3vh !important;
+            height: 8vh !important;
+        }
+    }
+    }
+}

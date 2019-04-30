@@ -1,0 +1,50 @@
+<ion-content>
+
+
+    <ul class="progressbar">
+      <li class="active" (click)="step1()"><img src="assets/imgs/trophy.png"></li>
+      <li class="active" (click)="step2()"><img src="assets/imgs/cake.png"></li>
+      <li class="active" (click)="step3()"><img src="assets/imgs/weight.png"></li>
+      <li (click)="step4()"></li>
+      <li></li>
+    </ul>
+  
+  
+    <div class="gif-block">
+      <h4>Let's personalize your account</h4>
+      <img src="assets/imgs/weightgif.gif">
+    </div>
+  
+    <div class="form-area">
+      <ion-row>
+        <label>Weight</label>
+        <ion-col size="9">
+          <ion-input mode="md" type="text" placeholder="Weight"></ion-input>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button (tap)="step3part2()">Kg</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <label>Height</label>
+        <ion-col size="9">
+          <ion-input mode="md" type="text" placeholder="Height"></ion-input>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button (tap)="step3part2()">cm</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <label>Weight Goal</label>
+        <ion-col col-12>
+          <ion-input mode="md" type="text" placeholder="Weight Goal"></ion-input>
+        </ion-col>
+      </ion-row>
+    </div>
+  
+    <div style="padding: 0 55px;">
+      <ion-button class="button" (click)="step4()">next</ion-button>
+    </div>
+  
+  </ion-content>
+  

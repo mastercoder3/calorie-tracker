@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>welcome</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list class="selector-list">
+    <ion-item class="selector-listt">
+ 
+      <ion-select class="custom-select" okText="Okay" cancelText="Dismiss"  [(ngModel)]="lang" (ionChange)="switchLanguage()">
+        <ion-select-option value="en">English</ion-select-option>
+        <ion-select-option value="ind">Indonesian</ion-select-option>
+ 
+      </ion-select>
+    </ion-item>
+ 
+  </ion-list>
+</ion-content>

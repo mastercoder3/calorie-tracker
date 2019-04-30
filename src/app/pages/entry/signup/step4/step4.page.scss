@@ -1,0 +1,117 @@
+ion-content {
+    --background: linear-gradient(to right, #e05e5f , #8d038a 108%);
+    padding: 9px 22px 25px;
+    text-align: center;
+    .progressbar {
+    counter-reset: step;
+    padding: 12px 0 0;
+    li {
+        list-style: none;
+        display: inline-block;
+        width: 18.5%;
+        position: relative;
+        text-align: center;
+        color: #a01285;
+        font-weight: 500;
+        font-size: 15px;
+        img {
+        width: 18px;
+        top: -39px;
+        position: relative;
+        display: flex;
+        margin: auto;
+        position: relative;
+        z-index: 2;
+        }
+        &::before {
+        content: counter(step);
+        counter-increment: step;
+        width: 30px;
+        height: 30px;
+        line-height : 30px;
+        border: 4px solid #f98c93;
+        border-radius: 100%;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        background-color: #f2cbd1;
+        position: relative;
+        z-index: 2;
+        }
+        &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 7px;
+        background-color: #ec6e79;
+        top: 15px;
+        left: -50%;
+        z-index : 1;
+        }
+        &:first-child:after {
+        content: none;
+        }
+    }
+    .active {
+        color: #fff;
+        &:before {
+        border-color: #fff;
+        background-color: #fff;
+        }
+    }
+    }
+    .progressbar li.active + li:after {
+    background-color: #a530af;
+    }
+    .gif-block {
+    h4 {
+        text-align: center;
+        color: #fff;
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+        font-weight: 400;
+    }
+    img {
+        width: 90%;
+        object-fit: cover;
+        height: 155px;
+        border-radius: 6px;
+        border: 2px solid #fff;
+        padding: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    }
+
+    .form-area {
+    padding: 20px 6px;
+    ion-button {
+        height: 3rem;
+        margin-bottom: 12px;
+        --box-shadow: inherit;
+        text-transform: capitalize;
+        --color: #d84c8c;
+        --background: white;
+        width: 85%;
+        --border-radius: 30px;
+    }
+    // .active {
+    //     background: map_get($colors, dark);
+    // }
+
+    }
+    .button {
+    --border-radius: 30px;
+    //background: #fff;
+    --color: #a01285;
+    height: 2.5rem;
+    font-size: 16px;
+    --background: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+}
+

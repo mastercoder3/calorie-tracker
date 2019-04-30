@@ -1,0 +1,28 @@
+<ion-content>
+
+  <ul class="progressbar">
+    <li class="active"><img src="assets/imgs/trophy.png"></li>
+    <li (click)="step2()"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <h4>What is your goal?</h4>
+
+
+<div class="form-area">
+  <ion-button class="button" color="light" (click)="ActionBtn()"><p>Lose Weight</p></ion-button>
+  <ion-button class="button" color="light"><p>Gain Weight</p></ion-button>
+  <ion-button class="button" color="light"><p>Eat Healthy</p></ion-button>
+  <ion-button class="button" color="light"><p>Increase Muscle</p></ion-button>
+  <ion-button class="button" color="light"><p>Pre-Diabetic</p></ion-button>
+</div>
+
+
+<div style="padding: 0 60px;">
+  <ion-button id="footer-btn" color="light" (click)="step2()"><p>next</p></ion-button>
+</div>
+
+
+</ion-content>

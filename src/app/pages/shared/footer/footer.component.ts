@@ -28,6 +28,10 @@ export class FooterComponent implements OnInit {
   weightTracker(){
     this.router.navigate(['weight-tracker']);
   }
+
+  nutrient(){
+    this.router.navigate(['/nutrient']);
+  }
 }
 
 
