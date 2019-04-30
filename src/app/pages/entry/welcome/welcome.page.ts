@@ -18,6 +18,7 @@ export class WelcomePage implements OnInit {
     }
    }
   ngOnInit() {
+    this.router.navigate(['login']);
   }
 
  
