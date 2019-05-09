@@ -14,10 +14,13 @@
 }
 
 .footer img{
-    display: inline;
+    
     position: relative;
     bottom: -8px !important;
     z-index: 1;
+    display: inline-block;
+    height: 54px;
+    width: 100%;
 }
 
 @media (min-width: 360px) and (max-width: 374px){
@@ -49,14 +52,16 @@
         margin-bottom: -52px;
         margin-left: -16px;
         display: block;
+        top: -8%;
+        position: relative;
+        
     }
     .add-img{
-        height: 50px;
-        width: 50px;
+        height: 50px !important;
+        width: 52px !important;
         display: inline-block;
         margin-left: 15px;
         margin-top: 8px;
-        
     }
 }
 @media (min-width: 411px) and (max-width: 440px){
@@ -65,7 +70,7 @@
         z-index: 2;
         height: 33px;
         width: 28px;
-        margin-bottom: 23px;
+        margin-bottom: 20px !important;
         margin-left : -15px;
     }
     .tabsButton2 > img{
@@ -73,7 +78,7 @@
         z-index: 2;
         height: 33px;
         width: 28px;
-        margin-bottom: 23px;
+        margin-bottom: 20px !important;
         margin-right : auto;
         margin-left: 32px;
     }
@@ -86,10 +91,12 @@
         margin-left: -14px;
         display: block;
         z-index:11111;
+        top: -30% !important;
+        position: relative;
     }
     .add-img{
-        height: 53px;
-        width: 53px;
+        height: 53px !important;
+        width: 53px !important;
         display: inline-block;
         margin-left: 16px;
         margin-top: 8px;
@@ -125,10 +132,12 @@
         margin-bottom: -50px;
         margin-left: -15px;
         display: block;
+        top: -8%;
+        position: relative;
     }
     .add-img{
-        height: 45px;
-        width: 45px;
+        height: 45px !important;
+        width: 45px !important;
         display: inline-block;
         margin-left: 13px;
         margin-top: 6px;
@@ -164,10 +173,12 @@
         margin-bottom: -54px;
         margin-left: -15px;
         display: block;
+        top: -15% !important;
+        position: relative !important;
     }
     .add-img{
-        height: 50px;
-        width: 50px;
+        height: 50px !important;
+        width: 50px !important;
         display: inline-block;
         margin-left: 15px;
         margin-top: 8px;
@@ -175,19 +186,28 @@
     }
 }
 @media (min-width: 768px) and (max-width: 1024px){
+    .footer img{
+    
+        position: relative;
+        bottom: -8px !important;
+        z-index: 1;
+        display: inline-block;
+        height: 94px !important;
+        width: 100%;
+    }
     .tabsButton > img{
         position: fixed;
         z-index: 2;
-        height: 60px;
-        width: 55px;
+        height: 60px !important;
+        width: 55px !important;
         margin-bottom: 35px;
         margin-left : -15px;
     }
     .tabsButton2 > img{
         position: fixed;
         z-index: 2;
-        height: 60px;
-        width: 55px;
+        height: 60px !important;
+        width: 55px !important;
         margin-bottom: 35px;
         margin-right : auto;
         margin-left: 66px;
@@ -200,10 +220,12 @@
         margin-bottom: -90px;
         margin-left: -23px;
         display: block;
+        top: -20px;
+        position: relative;
     }
     .add-img{
-        height: 95px;
-        width: 95px;
+        height: 95px !important;
+        width: 95px !important;
         display: inline-block;
         margin-left: 32px;
         margin-top: 26px;
@@ -240,6 +262,8 @@
         margin-bottom: -64px;
         margin-left: -19px;
         display: block;
+        top: -8%;
+        position: relative;
     }
     .add-img{
         height: 55px;
@@ -279,6 +303,8 @@
         margin-bottom: -68px;
         margin-left: -15px;
         display: block;
+        top: -8%;
+        position: relative;
     }
     .add-img{
         height: 55px;
@@ -293,19 +319,29 @@
     }
 }
 @media (min-width: 600px) and (max-width: 620px){
+    .footer img{
+    
+        position: relative;
+        bottom: -8px !important;
+        z-index: 1;
+        display: inline-block;
+        height: 74px !important;
+        width: 100%;
+    }
+
     .tabsButton > img{
         position: fixed;
         z-index: 2;
-        height: 50px;
-        width: 40px;
+        height: 50px !important;
+        width: 40px !important;
         margin-bottom: 25px;
         margin-left : -15px;
     }
     .tabsButton2 > img{
         position: fixed;
         z-index: 2;
-        height: 50px;
-        width: 40px;
+        height: 50px !important;
+        width: 40px !important;
         margin-bottom: 25px;
         margin-right : auto;
         margin-left: 66px;
@@ -318,10 +354,12 @@
         margin-bottom: -73px;
         margin-left: -27px;
         display: block;
+        top: -20px;
+        position: relative;
     }
     .add-img{
-        height: 70px;
-        width: 70px;
+        height: 70px !important;
+        width: 70px !important;
         display: inline-block;
         margin-left: 35px;
         margin-top: 27px;

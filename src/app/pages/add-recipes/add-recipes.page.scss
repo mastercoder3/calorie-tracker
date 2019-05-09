@@ -1,20 +1,23 @@
 ion-toolbar{
     --background:white;
-     height: 60px !important;
+    height: 50px !important;
  }
- ion-header{
-     height: 60px !important;
- }
- ion-title{
-    color: #8b008b;
-    font-size: 18px;
-    padding-top: 5px;
- }
- .back-icon{
-     font-size: 20px;
-     padding-top: 5px;
-     color: #8b008b;
- }
+
+    ion-title{
+        background: linear-gradient(to right,#d34848 40%,#8b008b 100%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        font-size: 18px !important;
+        padding-top: 5px !important;
+        text-transform: uppercase;
+        .back-icon{
+            font-size: 20px !important;
+            padding-top: 5px !important;
+            color: #8b008b !important;
+     }
+    }
+
+ 
  ion-content{
     --background: linear-gradient( #8b008b,#e15f5f);
     max-height: 100%;

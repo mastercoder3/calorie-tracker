@@ -1,11 +1,16 @@
 ion-toolbar{
     --background:white;
-    height: 60px !important;
+    height: 50px !important;
  }
  ion-title{
- color: #8b008b;
-    font-size: 18px;
+    background: linear-gradient(to right,#d34848 40%,#8b008b 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-size: 18px !important;
+    padding-top: 5px !important;
+    text-transform: uppercase;  
  }
+
  .back-icon2{
      font-size: 20px;
      color: #8b008b;

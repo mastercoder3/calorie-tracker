@@ -4,15 +4,15 @@ ion-toolbar{
  }
 
  ion-title{
-    background: linear-gradient(to right,#d34848 40%,#8b008b 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 18px;
-    padding-top: 5px;
+    background: linear-gradient(to right,#d34848 40%,#8b008b 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-size: 18px !important;
+    padding-top: 5px !important;
     .back-icon{
-        font-size: 20px;
-        padding-top: 5px;
-        color: #8b008b;
+        font-size: 20px !important;
+        padding-top: 5px !important;
+        color: #8b008b !important;
  }
 }
 
