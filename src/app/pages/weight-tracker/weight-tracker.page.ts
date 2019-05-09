@@ -18,6 +18,10 @@ export class WeightTrackerPage implements OnInit {
   barChart: any;
   doughnutChart: any;
   lang: any;
+  weightHistory: Array<any>;
+  graphWeight:Array<any>=[];
+  graphLabels:Array<any>=[];
+
   constructor(private router: Router, private helper: HelperService,public alertController: AlertController, public translate: TranslateService) {
     
     if(localStorage.getItem('language')) {
@@ -28,7 +32,25 @@ export class WeightTrackerPage implements OnInit {
    }
 
   ngOnInit() {
-    this.ChangeGraph(this.selector);
+    this.helper.getWeight().subscribe(res =>{
+      this.weightHistory = res;
+      if(this.weightHistory.length < 8)
+          {
+            this.graphLabels = ['1', '2', '3', '4', '5', '6', '7', '8'];
+            this.graphWeight = [80, 81, 81, 82, 82, 83, 84, 83.5];
+            this.ChangeGraph(this.selector);
+          } 
+        else{
+          this.weightHistory.forEach((a,i)=>{
+            this.graphLabels.push((9+i).toString());
+            this.graphWeight.push(parseInt(a.weight));
+            this.ChangeGraph(this.selector);
+          });
+        }     
+
+      
+    })
+
   }
 
   changeSwitchCase(val){
@@ -43,12 +65,12 @@ export class WeightTrackerPage implements OnInit {
         this.barChart = new Chart(this.barCanvas.nativeElement, {
           type: 'line',
           data: {
-            labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
+            labels: this.graphLabels,
             defaultColor: '#8d028a',
             datasets: [
               {
                 label: 'KG',
-                data: [80, 81, 81, 82, 82, 83, 84, 83.5],
+                data: this.graphWeight,
                 backgroundColor: [
                   'rgba(255, 99, 132, 0.2)',
                   'rgba(54, 162, 235, 0.2)',

@@ -81,6 +81,14 @@
                         24 April 2018
                      </ion-col>
                     </ion-row>
+                    <ion-row *ngFor="let item of weightHistory">
+                      <ion-col text-left>
+                        {{item?.weight | number : "1.1-1"}} kg
+                      </ion-col>
+                      <ion-col text-right>
+                         {{item?.date}}
+                      </ion-col>
+                     </ion-row>
                   </div>
                   <div class="bmi">
                      <ion-row>

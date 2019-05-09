@@ -62,8 +62,8 @@ export class CalorieTrackerPage implements OnInit {
       cssClass: 'alertBoxClass',
       inputs: [
         {
-          name: 'name1',
-          type: 'text',
+          name: 'data',
+          type: 'number',
           placeholder: 'Enter Weight'
         }],
         buttons: [
@@ -76,8 +76,32 @@ export class CalorieTrackerPage implements OnInit {
             }
           }, {
             text: 'Ok',
-            handler: () => {
-              console.log('Confirm Ok');
+            handler: (success) => {
+              if(success.data > 0){
+                const months = ["JAN", "FEB", "MAR","APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+                  let current_datetime = new Date()
+                  let formatted_date = current_datetime.getDate() + " " + months[current_datetime.getMonth()] + " " + current_datetime.getFullYear()
+                if(localStorage.getItem('myWeight')){
+                  let  x = JSON.parse(localStorage.getItem('myWeight'));
+                  let data = {
+                    weight: success.data,
+                    date : formatted_date
+                  }
+                  x.push(data);
+                  localStorage.setItem('myWeight',JSON.stringify(x));
+                  this.helper.setWeight(x);
+                }
+                else{
+                  let  x = [];
+                  let data = {
+                    weight: success.data,
+                    date : formatted_date
+                  }
+                  x.push(data);
+                  localStorage.setItem('myWeight',JSON.stringify(x));
+                  this.helper.setWeight(x);
+                }
+              }
             }
           }
         ]
