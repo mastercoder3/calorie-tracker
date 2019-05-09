@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./welcome.page.scss'],
 })
 export class WelcomePage implements OnInit {
-  lang: any;
+  lang: any = 'en';
   constructor(private router:Router, public translate: TranslateService) {
    
     if(localStorage.getItem('language')) {
@@ -16,15 +16,19 @@ export class WelcomePage implements OnInit {
       this.translate.setDefaultLang(this.lang);
       this.translate.use(this.lang);
     }
+    else{
+      this.translate.setDefaultLang(this.lang);
+      this.translate.use(this.lang);
+    }
    }
   ngOnInit() {
-    this.router.navigate(['login']);
   }
 
  
   
   login() {
-   
+    this.router.navigate(['login']);
+
   }
 
   step1() {

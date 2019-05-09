@@ -9,6 +9,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class Step3Page implements OnInit {
 lang: any;
+kg=true;
+cm = true;
   constructor(private router: Router, public translate: TranslateService) { 
     if(localStorage.getItem('language')) {
       this.lang=localStorage.getItem('language')
@@ -30,6 +32,24 @@ lang: any;
   }
   step4() {
     this.router.navigate(['step4']);
+  }
+
+  convertKg(){
+    if(this.kg){
+      this.kg = false;
+    }
+    else{
+      this.kg = true;
+    }
+  }
+
+  convertCm(){
+    if(this.cm){
+      this.cm = false;
+    }
+    else{
+      this.cm = true;
+    }
   }
 
   step3part2() {

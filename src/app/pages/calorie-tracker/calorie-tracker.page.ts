@@ -31,6 +31,11 @@ export class CalorieTrackerPage implements OnInit {
         this.translate.setDefaultLang(this.lang);
         this.translate.use(this.lang);
       }
+      else{
+        this.lang = 'en';
+        this.translate.setDefaultLang(this.lang);
+        this.translate.use(this.lang);
+      }
        localStorage.removeItem('last');
       this.router.events
       .pipe(

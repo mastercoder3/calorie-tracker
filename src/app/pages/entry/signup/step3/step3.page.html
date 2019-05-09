@@ -22,7 +22,8 @@
           <ion-input mode="md" type="text" placeholder="{{'EnterWeight' | translate}}"></ion-input>
         </ion-col>
         <ion-col size="3">
-          <ion-button (tap)="step3part2()">Kg</ion-button>
+          <ion-button *ngIf="kg" (click)="convertKg()">Kg</ion-button>
+          <ion-button *ngIf="!kg" (click)="convertKg()">lb</ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
@@ -31,7 +32,8 @@
           <ion-input mode="md" type="text" placeholder="{{'EnterHeight' | translate}}"></ion-input>
         </ion-col>
         <ion-col size="3">
-          <ion-button (tap)="step3part2()">cm</ion-button>
+          <ion-button *ngIf="cm" (click)="convertCm()">cm</ion-button>
+          <ion-button *ngIf="!cm" (click)="convertCm()">in</ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
